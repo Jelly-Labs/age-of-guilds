@@ -1,7 +1,5 @@
 # Age of Guilds
 
-A Unity project hosted on GitHub.
-
 <img width="1920" height="1080" alt="Deck" src="https://github.com/user-attachments/assets/7d2d430b-24df-4dc0-81c6-fcb4b6ad2529" />
 
 ## Getting Started
