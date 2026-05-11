@@ -23,24 +23,6 @@ git clone https://github.com/Jelly-Labs/age-of-guilds.git
 #    File → Open Project → select the cloned folder
 ```
 
-### Pushing Your Unity Project
-
-If you are copying an existing Unity project into this repository:
-
-```bash
-# 1. Copy your Unity project files into the cloned folder
-#    (Assets/, ProjectSettings/, Packages/ are the essential folders)
-
-# 2. Stage and commit
-git add .
-git commit -m "Initial Unity project"
-git push
-```
-
-> **Note:** Large binary files (images, audio, 3D models, etc.) are automatically
-> tracked by Git LFS thanks to the `.gitattributes` file included in this repo.
-> Make sure `git lfs install` has been run before your first push.
-
 ## Project Structure
 
 | Folder | Description |
