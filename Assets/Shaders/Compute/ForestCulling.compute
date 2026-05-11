@@ -1,0 +1,55 @@
+// ForestCulling.compute
+// GPU Frustum Culling for the GPU Indirect Forest Renderer.
+// Reads pre-baked Matrix4x4 instances (position already encoded in col 3).
+// Appends only visible instances to the output buffer — one call per frame.
+
+#pragma kernel CSFrustumCull
+
+// ── Input: pre-baked TRS matrices (one per cluster) ──────────────────────────
+// Each float4x4 has the full objectToWorld baked at editor time (axis correction + random Y + scale)
+StructuredBuffer<float4x4> _AllInstances;
+int                         _InstanceCount;
+
+// ── Camera frustum planes (6 planes, float4 = normal.xyz + distance.w) ───────
+float4 _FrustumPlanes[6];
+
+// ── Output: only visible instances ───────────────────────────────────────────
+struct DrawInstance
+{
+    float4x4 objectToWorld;
+};
+
+AppendStructuredBuffer<DrawInstance> _VisibleInstances;
+
+// ── Sphere-frustum visibility test ───────────────────────────────────────────
+bool IsVisible(float3 center, float radius)
+{
+    for (int i = 0; i < 6; i++)
+    {
+        if (dot(_FrustumPlanes[i].xyz, center) + _FrustumPlanes[i].w < -radius)
+            return false;
+    }
+    return true;
+}
+
+[numthreads(64, 1, 1)]
+void CSFrustumCull(uint3 id : SV_DispatchThreadID)
+{
+    if ((int)id.x >= _InstanceCount) return;
+
+    float4x4 m = _AllInstances[id.x];
+
+    // Extract position from translation column of the pre-baked matrix
+    float3 position = float3(m[0][3], m[1][3], m[2][3]);
+
+    // Extract approximate scale from the length of the first column (X axis scale)
+    float scale = length(float3(m[0][0], m[1][0], m[2][0]));
+
+    // Sphere cull — rough bound covers the largest cluster diagonal
+    if (!IsVisible(position, scale * 3.0)) return;
+
+    // Pass the pre-baked matrix straight through — no building required!
+    DrawInstance draw;
+    draw.objectToWorld = m;
+    _VisibleInstances.Append(draw);
+}

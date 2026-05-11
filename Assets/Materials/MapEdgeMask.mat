@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MapEdgeMask
+  m_Shader: {fileID: 4800000, guid: a1a0fa8819074fc68f3da07d2d7102b1, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3100
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _NoiseScale: 0.025
+    - _NoiseStrength: 0.16
+    - _Opacity: 0.78
+    m_Colors:
+    - _EdgeColor: {r: 0.64, g: 0.46, b: 0.27, a: 1}
+    - _WorldCenter: {r: 0, g: 0, b: 0, a: 0}
+    - _WorldRadii: {r: 138, g: 138, b: 42, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

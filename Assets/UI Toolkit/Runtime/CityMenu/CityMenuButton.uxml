@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Runtime/CityMenu/CityMenuButton.uss?fileID=7433441132597879392&amp;guid=90a8fd2193dc4a338f8ee0e79f7f83e3&amp;type=3#CityMenuButton"/>
+    <ui:Button name="CityMenuButton" class="city-menu-button" text="">
+        <ui:Image name="CityMenuButtonImage" class="city-menu-button__image"/>
+        <ui:Label name="CityMenuButtonLabel" class="city-menu-button__label" text="menu item"/>
+    </ui:Button>
+</ui:UXML>

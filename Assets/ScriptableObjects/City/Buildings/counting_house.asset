@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6d3c699934840c9aa75834a4b47d20, type: 3}
+  m_Name: counting_house
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.City.CityBuildingDefinition
+  id: counting_house
+  displayName: Counting House
+  kind: 2
+  icon: {fileID: 0}
+  fallbackGlyph: CH
+  accentColor: {r: 0.92, g: 0.84, b: 0.55, a: 1}
+  panelTitle: Counting House
+  panelSummary: Track trade ledgers, stored goods, tariffs, and financial throughput.

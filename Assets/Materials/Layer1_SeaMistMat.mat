@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Layer1_SeaMistMat
+  m_Shader: {fileID: 4800000, guid: c5e4a5f5d1d9b42eeaecd14f9fc9ba5b, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _CoastalMap:
+        m_Texture: {fileID: 2800000, guid: d806100f6abe4494cab3717f57bbe836, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Coverage: 0.672
+    - _Deform: 0.773
+    - _HighlandElevationFull: -0.15
+    - _HighlandElevationStart: 0.02
+    - _HighlandFade: 1
+    - _IntersectionFade: 10
+    - _MistBobAmount: 3
+    - _MistBobFreq: 0.05
+    - _MistBobSpeed: 0.05
+    - _Scale: 0.406
+    - _Softness: 0.5
+    - _SunOffset: 0.1093
+    m_Colors:
+    - _BaseColor: {r: 0.8066038, g: 1, b: 0.85913116, a: 1}
+    - _ShadowColor: {r: 0.9103774, g: 0.9720809, b: 1, a: 0.27058825}
+    - _SunDir: {r: -0.12, g: 1, b: 0, a: 0}
+    - _TerrainShadowTint: {r: 0.46293163, g: 0.6199984, b: 0.95283014, a: 0.45490196}
+    - _WindSpeed: {r: 0.01, g: 0.01, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

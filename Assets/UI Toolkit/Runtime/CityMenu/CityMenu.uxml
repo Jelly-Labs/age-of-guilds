@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Runtime/CityMenu/CityMenu.uss?fileID=7433441132597879392&amp;guid=28179b0194864a02a0bdfc28e1d755a1&amp;type=3#CityMenu"/>
+    <ui:VisualElement name="CityMenuRoot" class="city-menu-root">
+        <ui:VisualElement name="CityMenuPanelLayer" class="city-menu-panel-layer"/>
+        <ui:VisualElement name="CityMenuFooterAnchor" class="city-menu-footer-anchor">
+            <ui:VisualElement name="CityMenuFooterBar" class="city-menu-footer-bar"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
+  m_Name: PC_Renderer
+  m_EditorClassIdentifier: 
+  debugShaders:
+    debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
+    hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
+    probeVolumeSamplingDebugComputeShader: {fileID: 7200000, guid: 53626a513ea68ce47b59dc1299fe3959, type: 3}
+  probeVolumeResources:
+    probeVolumeDebugShader: {fileID: 4800000, guid: e5c6678ed2aaa91408dd3df699057aae, type: 3}
+    probeVolumeFragmentationDebugShader: {fileID: 4800000, guid: 03cfc4915c15d504a9ed85ecc404e607, type: 3}
+    probeVolumeOffsetDebugShader: {fileID: 4800000, guid: 53a11f4ebaebf4049b3638ef78dc9664, type: 3}
+    probeVolumeSamplingDebugShader: {fileID: 4800000, guid: 8f96cd657dc40064aa21efcc7e50a2e7, type: 3}
+    probeSamplingDebugMesh: {fileID: -3555484719484374845, guid: 57d7c4c16e2765b47a4d2069b311bffe, type: 3}
+    probeSamplingDebugTexture: {fileID: 2800000, guid: 24ec0e140fb444a44ab96ee80844e18e, type: 3}
+    probeVolumeBlendStatesCS: {fileID: 7200000, guid: b9a23f869c4fd45f19c5ada54dd82176, type: 3}
+  m_RendererFeatures:
+  - {fileID: 7833122117494664109}
+  - {fileID: 6135944381474387262}
+  m_RendererFeatureMap: ad6b866f10d7b46c3eb555c3e7402755
+  m_UseNativeRenderPass: 1
+  xrSystemData: {fileID: 0}
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  m_AssetVersion: 3
+  m_PrepassLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 0
+    stencilReference: 1
+    stencilCompareFunction: 3
+    passOperation: 2
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 1
+  m_RenderingMode: 2
+  m_DepthPrimingMode: 0
+  m_CopyDepthMode: 0
+  m_DepthAttachmentFormat: 0
+  m_DepthTextureFormat: 0
+  m_AccurateGbufferNormals: 0
+  m_IntermediateTextureMode: 0
+--- !u!114 &6135944381474387262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4a9e1d74604f4a879d66e2890ea4b1, type: 3}
+  m_Name: Guild Lens
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    effectEnabled: 1
+    shader: {fileID: 4800000, guid: 72a7d2b4e87744d5b6168aabf1cdd8d2, type: 3}
+    renderPassEvent: 550
+    outlineOilExclusionLayerMask:
+      serializedVersion: 2
+      m_Bits: 16
+    focusDistanceFallback: 55
+    focusRangeWidth: 18
+    transitionSoftness: 1000
+    focusProtectionStrength: 1
+    focusFalloffPower: 1.32
+    mapRevealZoomStart: 1
+    mapRevealZoomFull: 0
+    mapRevealResponse: 1
+    mapRevealSmoothing: 0.5
+    mapRevealMotionBoost: 0.151
+    globalStrength: 1
+    worldClarity: 1
+    nearStylizationStrength: 0.822
+    farStylizationStrength: 1
+    farHazeStrength: 1
+    farHazeRange: 58.37
+    oilSmearAmount: 0
+    papyrusTextureStrength: 1
+    paperVignetteStrength: 0.682
+    paperVignetteRadius: 0.498
+    ambientPaperVignetteStrength: 0.615
+    horizonPaperStrength: 0.816
+    inkEdgeDarkeningStrength: 0.548
+    distanceColorFade: 1
+    saturationPreserve: 0.633
+    contrastPreserve: 1
+    outlineWidthPixels: 0.25
+    outlineStrength: 1.901
+    outlineColor: {r: 0.103773594, g: 0.08223567, b: 0.06608224, a: 1}
+    outlineOpacity: 0.835
+    outlineContrast: 0.601
+    outlineEdgeSoftness: 0.675
+    outlineAnimationSpeed: 1
+    outlineRevealIntensity: 1
+    outlineOrganicStrength: 0.784
+    outlineRevealStrength: 1
+    outlineNoiseScale: 32
+    outlineRevealSoftness: 0.42
+    outlineSettleStrength: 0.82
+    outlineBleedStrength: 0.467
+    outlineBleedWidthPixels: 2
+    outlineBleedSoftness: 0.599
+    outlineSegmentRandomness: 1
+    outlineStrokeCrawlStrength: 1
+    outlineLeadingEdgeStrength: 1
+    outlineEdgePoolingStrength: 0.45
+    papyrusColor: {r: 0.9622642, g: 0.7604243, b: 0.5310609, a: 1}
+    papyrusTintStrength: 1
+    papyrusOverlayOpacity: 1
+    papyrusSaturation: 0.505
+    papyrusAgingDarkening: 1
+    papyrusBlendStrength: 1
+    papyrusEdgeSoftness: 1
+    papyrusEdgeNoiseStrength: 0.84
+    papyrusEdgeDarkening: 0.786
+    papyrusEdgeAnimationSpeed: 2
+    papyrusContrast: 2
+    papyrusMaterialStrength: 1
+    papyrusUnifyStrength: 0.731
+    papyrusFiberStrength: 0.041
+    papyrusStainStrength: 0.748
+    papyrusBlueWashStrength: 0.93
+    papyrusScrollFlowStrength: 1
+    papyrusScrollWorldScale: 0.0015
+    papyrusScrollMaterialBoost: 0.22
+    inkWashStrength: 1
+    inkWashColor: {r: 0, g: 0.19037914, b: 0.3301887, a: 1}
+    inkWashScale: 10.5
+    inkWashSoftness: 1
+    waterLensStrength: 1
+    waterTexture: {fileID: 2800000, guid: 66fd427f1468e4c448108ef9d7e97842, type: 3}
+    waterTextureEnabled: 1
+    waterTextureOpacity: 1
+    waterTextureScale: 0.012
+    waterTextureDensity: 1
+    waterTextureSeed: 11.3
+    waterTextureRotation: 180
+    waterTextureRandomRotation: 0.254
+    waterTextureContrast: 1.1
+    waterTextureIntensity: 1.2
+    journalTexture: {fileID: 2800000, guid: 19b1e75e666404914987172ea7e94845, type: 3}
+    journalTextureEnabled: 1
+    journalTextureOpacity: 1
+    journalTextureScale: 8.44
+    journalTextureDensity: 0.409
+    journalTextureSeed: 45.81
+    journalTextureRotation: -8
+    journalTextureRandomRotation: 0.65
+    journalTextureContrast: 1
+    journalTextureIntensity: 0.8
+    waterMotionSuppression: 1
+    waterPapyrusOverrideStrength: 1
+    waterPapyrusBlueStrength: 0.65
+    waterPapyrusMatteSmoothness: 0.04
+    cameraAngleEllipseStrength: 0.553
+    ellipseAngleStart: 30.9
+    ellipseAngleEnd: 50.2
+    perspectiveRadiusX: 1.08
+    perspectiveRadiusY: 0.39
+    topDownRadiusX: 0.51
+    topDownRadiusY: 0.53
+    ellipseAngleSoftness: 1
+    papyrusRevealStrength: 1
+    papyrusRevealSpeed: 5
+    papyrusRevealScale: 2.75
+    papyrusRevealSoftness: 1
+    cartoonStrength: 0.205
+    cartoonSampleRadiusPixels: 2.33
+    cartoonValueSteps: 2.96
+    cartoonColorSteps: 16.61
+    cartoonEdgePreserve: 1
+    outlinePapyrusDependence: 1
+    outlineFocusInfluence: 0.279
+    waterBoundaryOutlineStrength: 0.75
+    waterBoundaryOutlineWidthPixels: 1.15
+    waterBoundaryOutlineThicknessInfluence: 0
+    waterBoundaryOutlineSide: 0.47
+    oilPapyrusDependence: 0.975
+    miniatureFocusEnabled: 1
+    miniatureFocusStrength: 1
+    miniatureFocusRadiusPixels: 2.25
+    miniatureFocusSoftness: 0.798
+    miniatureFocusZoomInfluence: 0.528
+    miniatureFocusPapyrusProtection: 0.378
+    miniatureFocusEdgeBias: 1
+    motionSensitivity: 5
+    motionPositionSensitivity: 1
+    motionRotationSensitivity: 0.015
+    motionFovSensitivity: 0.05
+    motionLagSeconds: 1
+    motionSmoothing: 0.12
+    motionRiseSpeed: 5
+    motionFallSpeed: 5
+    maxMotionAmount: 0.837
+    papyrusMotionInfluence: 1
+    outlineMotionInfluence: 0.65
+    oilMotionInfluence: 0.85
+    papyrusMotionRiseSpeed: 3
+    papyrusMotionDecaySpeed: 0.8
+    outlineMotionRiseSpeed: 5
+    outlineMotionDecaySpeed: 0.45
+    oilMotionDecaySpeed: 0.75
+    papyrusMotionDrift: 0.12
+    papyrusMotionDriftSensitivity: 1.5
+    papyrusMotionDriftDecaySpeed: 0.55
+    debugMode: 0
+--- !u!114 &7833122117494664109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62c9c65cf3354c93be831c8bc075510, type: 3}
+  m_Name: ScreenSpaceAmbientOcclusion
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_Settings:
+    AOMethod: 0
+    Downsample: 0
+    AfterOpaque: 0
+    Source: 1
+    NormalSamples: 1
+    Intensity: 0.4
+    DirectLightingStrength: 0.25
+    Radius: 0.3
+    Samples: 1
+    BlurQuality: 0
+    Falloff: 100
+    SampleCount: -1

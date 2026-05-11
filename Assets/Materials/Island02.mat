@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Island02
+  m_Shader: {fileID: 4800000, guid: 40b47b84f4fd24a5b8d14be0101570e5, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: _MidColor _RoadStrength _ShorelineBreakupStrength
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: c96b7499217d345c1a3094b963aaa819, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 2800000, guid: d13a6fea9550e4d6f96293adbd4ded38, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShorelineDistanceMap:
+        m_Texture: {fileID: 2800000, guid: 7bdf575681ec643d0ba4e854c86202f1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AODarkness: 0.879
+    - _AOHeightRange: 0.54
+    - _AtmosFogEnd: 120
+    - _AtmosFogStart: 30
+    - _AtmosFogStrength: 0.45
+    - _BeachBlend: -0.09
+    - _BeachHeight: 0.8
+    - _BeachHeightMax: -2.5
+    - _BeachNoiseScale: 1.23
+    - _BeachNoiseStrength: 0.686
+    - _BeachSlopeMax: 0.037
+    - _BeachSlopeMin: 0.151
+    - _Blend: 0.3
+    - _BlendMode: 2.98
+    - _CliffNormalBoost: 2.9
+    - _CliffSlopeEnd: 0.394
+    - _CliffSlopeStart: 0.172
+    - _CliffStrength: 0.48
+    - _CliffTextureFade: 0.381
+    - _CoastNormalBoost: 3.34
+    - _DetailNormalFineScale: 5.21
+    - _DetailNormalFineStrength: 0.37
+    - _DetailNormalScale: 0.02
+    - _DetailNormalStrength: 0.24
+    - _FarmBorderWidth: 0.142
+    - _FarmHeightMax: 0.21
+    - _FarmHeightMin: 0.03
+    - _FarmScale: 2
+    - _FarmSlopeMax: 0.005
+    - _FarmStrength: 1
+    - _FarmStripeContrast: 20
+    - _FarmStripeFreq: -3.18
+    - _ForestHeightMax: 2.82
+    - _ForestHeightMin: 1.2
+    - _ForestScale: -0.25
+    - _ForestSoftness: 0.356
+    - _ForestStrength: 0.587
+    - _ForestThreshold: 0.6
+    - _GrassHeightMax: 1.79
+    - _GrassHeightMin: 1.1
+    - _IslandShadowIntensity: 1.77
+    - _LegacyBeachStrength: 0
+    - _Metallic: 0
+    - _MidHeightMax: 0.86
+    - _MidHeightMin: 0.36
+    - _RoadAnchorCount: 0
+    - _RoadBranchCount: 8
+    - _RoadDebugMode: 0
+    - _RoadDensity: 1
+    - _RoadHeightMax: 191.3
+    - _RoadHeightMin: -16.6
+    - _RoadMaskContrast: 8
+    - _RoadMaskCutoff: 0.134
+    - _RoadMaxDarken: 0.172
+    - _RoadMeanderScale: 0.15
+    - _RoadMeanderStrength: -17.2
+    - _RoadNormalDamp: 0.806
+    - _RoadRadius: 75.3
+    - _RoadSeed: 13.04
+    - _RoadSlopeMax: 1
+    - _RoadSmoothness: 0.186
+    - _RoadSoftness: -0.04
+    - _RoadStrength: 1
+    - _RoadTextureOverride: 0.637
+    - _RoadWidth: 0.06
+    - _RockHeightMax: 1
+    - _RockHeightMin: 0.19
+    - _ShadowLift: 0.204
+    - _ShorelineBeachSoftness: 0.51
+    - _ShorelineBeachStrength: 1
+    - _ShorelineBeachWidth: 0.04
+    - _ShorelineBreakupScale: 0.2
+    - _ShorelineBreakupStrength: 0.15
+    - _ShorelineCliffExclusionSoftness: 0.5
+    - _ShorelineCliffOverride: 0.242
+    - _ShorelineDebugMode: 0
+    - _ShorelineMapFlipX: 1
+    - _ShorelineMapFlipY: 1
+    - _ShorelineMapMaxDistance: 100
+    - _ShorelineNormalOverride: 1
+    - _ShorelineOverlayStrength: 1
+    - _ShorelineSlopeFadeEnd: 0.793
+    - _ShorelineSlopeFadeStart: 0.742
+    - _ShorelineSteepStrength: 0.486
+    - _ShorelineTextureOverride: 1
+    - _Smoothness: 0.045
+    - _SmoothnessBeach: 0.421
+    - _SmoothnessCliff: 0.193
+    - _SmoothnessGrass: 0.15
+    - _SmoothnessMid: 0.129
+    - _SmoothnessRock: 0.091
+    - _SmoothnessSnow: 0.287
+    - _SnowBlend: 24.4
+    - _SnowHeightMax: 3.81
+    - _SnowHeightMin: 0.13
+    - _SnowNormalDamp: 0.499
+    - _SnowSlopeMax: 0.329
+    - _SnowSlopeMin: 0.101
+    - _SparkleDensity: 0.5
+    - _SparkleScale: 7
+    - _SparkleSmooth: 1
+    - _SunQuenchPower: 211
+    - _TextureBlend: 1
+    - _TriplanarScale: 0.06
+    - _TriplanarSharpness: 1.96
+    - _VariationScale: 0.01
+    - _VariationStrength: 1
+    - _WetDepth: 1
+    - _WetStrength: 0.499
+    m_Colors:
+    - _AtmosFogColor: {r: 0.40650585, g: 0.5580496, b: 0.5943396, a: 1}
+    - _CliffColor: {r: 0.78039217, g: 0.7137255, b: 0.6392157, a: 1}
+    - _FarmBorderColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FarmColor: {r: 0.72, g: 0.62, b: 0.24999997, a: 1}
+    - _FarmColor1: {r: 0.78, g: 0.7, b: 0.14999998, a: 1}
+    - _FarmColor2: {r: 0.73055243, g: 0.8301887, b: 0.5286579, a: 1}
+    - _FarmColor3: {r: 0.17999998, g: 0.39999998, b: 0.11999995, a: 1}
+    - _ForestColor: {r: 0.55682886, g: 0.6886792, b: 0.54249734, a: 1}
+    - _GrassColor: {r: 0.19464225, g: 0.509434, b: 0.22063422, a: 1}
+    - _IslandShadowColor: {r: 0.34999993, g: 0.43529412, b: 0.36078432, a: 1}
+    - _MidColor: {r: 0, g: 0.6886792, b: 0.089827746, a: 1}
+    - _RoadAnchor0: {r: 0, g: 0, b: 0, a: 0}
+    - _RoadAnchor1: {r: 0, g: 0, b: 0, a: 0}
+    - _RoadAnchor2: {r: 0, g: 0, b: 0, a: 0}
+    - _RoadAnchor3: {r: 0, g: 0, b: 0, a: 0}
+    - _RoadAnchor4: {r: 0, g: 0, b: 0, a: 0}
+    - _RoadAnchor5: {r: 0, g: 0, b: 0, a: 0}
+    - _RoadAnchor6: {r: 0, g: 0, b: 0, a: 0}
+    - _RoadAnchor7: {r: 0, g: 0, b: 0, a: 0}
+    - _RoadColor: {r: 0.754717, g: 0.6887947, b: 0.6229975, a: 1}
+    - _RockColor: {r: 0.33962262, g: 0.33962262, b: 0.24190101, a: 1}
+    - _SandColor: {r: 0.78, g: 0.69, b: 0.48, a: 1}
+    - _ShorelineMapOrigin: {r: -150, g: -150, b: 0, a: 0}
+    - _ShorelineMapSize: {r: 300, g: 300, b: 0, a: 0}
+    - _ShorelineOverlayColor: {r: 0.78, g: 0.69, b: 0.48, a: 1}
+    - _SnowColor: {r: 0.92, g: 0.96, b: 1, a: 1}
+    - _VariationColor: {r: 0.6020381, g: 0.66404223, b: 0.7830189, a: 1}
+    - _WetColor: {r: 0.17277476, g: 0.3301887, b: 0.14173195, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

@@ -1,0 +1,58 @@
+.city-menu-button-template {
+    width: auto;
+    min-width: 80px;
+    max-width: 100px;
+    height: auto;
+    min-height: 148px;
+    max-height: 148px;
+}
+
+.city-menu-button {
+    width: 70px;
+    height: 148px;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.city-menu-button--enabled:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.city-menu-button__image {
+    width: auto;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.city-menu-button__label {
+    width: auto;
+    height: 34px;
+    min-height: 34px;
+    max-height: 34px;
+    color: rgb(234, 194, 126);
+    font-size: 12px;
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    white-space: normal;
+}
+
+.city-menu-button--enabled:hover .city-menu-button__label,
+.city-menu-button--selected .city-menu-button__label {
+    color: rgb(255, 225, 166);
+}
+
+.city-menu-button--disabled {
+    opacity: 1;
+}
+
+.city-menu-button--disabled .city-menu-button__label {
+    color: rgb(128, 126, 139);
+}

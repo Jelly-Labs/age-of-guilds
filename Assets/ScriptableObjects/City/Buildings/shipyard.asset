@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6d3c699934840c9aa75834a4b47d20, type: 3}
+  m_Name: shipyard
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.City.CityBuildingDefinition
+  id: shipyard
+  displayName: Shipyard
+  kind: 0
+  icon: {fileID: 0}
+  fallbackGlyph: SY
+  accentColor: {r: 0.93, g: 0.72, b: 0.42, a: 1}
+  panelTitle: Shipyard
+  panelSummary: Commission hulls, review dock capacity, and prepare maritime upgrades.

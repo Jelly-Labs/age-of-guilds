@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92850ab46e12e448c86db2e4013be866, type: 3}
+  m_Name: shipyard_config
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.City.ShipyardConfig
+  buildableShips:
+  - id: trade_cog
+    displayName: Trade cog
+    classTag: Trade
+    image: {fileID: 0}
+    speedText: 3
+    healthText: 100
+    crewText: 5
+    storageText: 500
+    operationalCostText: 20/day
+    priceText: 120,000
+    estimatedBuildTimeText: August 11, 1228
+    requiredMaterials:
+    - id: timber
+      displayLabel: Timber
+      icon: {fileID: 0}
+      amountText: 500
+      warning: 0
+    - id: cloth
+      displayLabel: Cloth
+      icon: {fileID: 0}
+      amountText: 180
+      warning: 0
+    - id: tools
+      displayLabel: Tools
+      icon: {fileID: 0}
+      amountText: 25
+      warning: 0
+    - id: iron
+      displayLabel: Iron
+      icon: {fileID: 0}
+      amountText: 400
+      warning: 0
+    - id: tar
+      displayLabel: Tar
+      icon: {fileID: 0}
+      amountText: 350
+      warning: 0
+    - id: provisions
+      displayLabel: Provisions
+      icon: {fileID: 0}
+      amountText: 20
+      warning: 0
+  - id: merchant_fluyt
+    displayName: Merchant Fluyt
+    classTag: Trade
+    image: {fileID: 0}
+    speedText: 2
+    healthText: 150
+    crewText: 12
+    storageText: 1,500
+    operationalCostText: 110/day
+    priceText: 51,000
+    estimatedBuildTimeText: August 29, 1228
+    requiredMaterials:
+    - id: timber
+      displayLabel: Timber
+      icon: {fileID: 0}
+      amountText: 650
+      warning: 0
+    - id: cloth
+      displayLabel: Cloth
+      icon: {fileID: 0}
+      amountText: 220
+      warning: 0
+    - id: tools
+      displayLabel: Tools
+      icon: {fileID: 0}
+      amountText: 40
+      warning: 0
+    - id: iron
+      displayLabel: Iron
+      icon: {fileID: 0}
+      amountText: 520
+      warning: 0
+    - id: tar
+      displayLabel: Tar
+      icon: {fileID: 0}
+      amountText: 420
+      warning: 0
+    - id: provisions
+      displayLabel: Provisions
+      icon: {fileID: 0}
+      amountText: 30
+      warning: 0
+  - id: cargo_clipper
+    displayName: Cargo Clipper
+    classTag: Trade
+    image: {fileID: 0}
+    speedText: 10
+    healthText: 120
+    crewText: 35
+    storageText: 3,500
+    operationalCostText: 140/day
+    priceText: 87,000
+    estimatedBuildTimeText: September 29, 1228
+    requiredMaterials:
+    - id: timber
+      displayLabel: Timber
+      icon: {fileID: 0}
+      amountText: 820
+      warning: 0
+    - id: cloth
+      displayLabel: Cloth
+      icon: {fileID: 0}
+      amountText: 260
+      warning: 0
+    - id: tools
+      displayLabel: Tools
+      icon: {fileID: 0}
+      amountText: 60
+      warning: 0
+    - id: iron
+      displayLabel: Iron
+      icon: {fileID: 0}
+      amountText: 700
+      warning: 0
+    - id: tar
+      displayLabel: Tar
+      icon: {fileID: 0}
+      amountText: 520
+      warning: 0
+    - id: provisions
+      displayLabel: Provisions
+      icon: {fileID: 0}
+      amountText: 45
+      warning: 0
+  - id: frigate
+    displayName: Frigate
+    classTag: Battle
+    image: {fileID: 0}
+    speedText: 7
+    healthText: 400
+    crewText: 55
+    storageText: 15
+    operationalCostText: 200/day
+    priceText: 120,000
+    estimatedBuildTimeText: October 29, 1228
+    requiredMaterials:
+    - id: timber
+      displayLabel: Timber
+      icon: {fileID: 0}
+      amountText: 1000
+      warning: 0
+    - id: cloth
+      displayLabel: Cloth
+      icon: {fileID: 0}
+      amountText: 340
+      warning: 0
+    - id: tools
+      displayLabel: Tools
+      icon: {fileID: 0}
+      amountText: 90
+      warning: 0
+    - id: iron
+      displayLabel: Iron
+      icon: {fileID: 0}
+      amountText: 900
+      warning: 0
+    - id: tar
+      displayLabel: Tar
+      icon: {fileID: 0}
+      amountText: 700
+      warning: 0
+    - id: cannon
+      displayLabel: Cannon
+      icon: {fileID: 0}
+      amountText: 24
+      warning: 0
+  constructionQueue:
+  - id: current_trade_cog
+    shipName: Trade cog
+    ownerName: You
+    estimatedBuildTimeText: August 11, 1228
+    statusMessage: Some materials are missing in the city. Construction will continue
+      once materials are available.
+    progress: 0.64
+    materialStatus:
+    - id: timber
+      displayLabel: Timber
+      icon: {fileID: 0}
+      amountText: 320/500
+      warning: 1
+    - id: cloth
+      displayLabel: Cloth
+      icon: {fileID: 0}
+      amountText: 180/180
+      warning: 0
+    - id: tools
+      displayLabel: Tools
+      icon: {fileID: 0}
+      amountText: 25/25
+      warning: 0
+  - id: frigate_queue
+    shipName: Frigate
+    ownerName: username1
+    estimatedBuildTimeText: August 29, 1228
+    statusMessage: 
+    progress: 0.18
+    materialStatus: []
+  - id: trade_cog_queue_1
+    shipName: Trade cog
+    ownerName: username2
+    estimatedBuildTimeText: September 29, 1228
+    statusMessage: 
+    progress: 0.1
+    materialStatus: []
+  - id: trade_cog_queue_2
+    shipName: Trade cog
+    ownerName: username1
+    estimatedBuildTimeText: October 29, 1228
+    statusMessage: 
+    progress: 0.06
+    materialStatus: []
+  - id: cargo_clipper_queue
+    shipName: Cargo Clipper
+    ownerName: username3
+    estimatedBuildTimeText: November 29, 1228
+    statusMessage: 
+    progress: 0.03
+    materialStatus: []
+  - id: frigate_queue_2
+    shipName: Frigate
+    ownerName: username4
+    estimatedBuildTimeText: December 29, 1228
+    statusMessage: 
+    progress: 0.01
+    materialStatus: []
+  buyOffers:
+  - id: trade_cog_offer
+    displayName: Trade cog
+    classTag: Trade
+    image: {fileID: 0}
+    speedText: 3
+    healthText: 100
+    crewText: 5
+    storageText: 500
+    operationalCostText: 20/day
+    priceText: 35,000
+    ownedCountText: 1
+  - id: merchant_fluyt_offer
+    displayName: Merchant Fluyt
+    classTag: Trade
+    image: {fileID: 0}
+    speedText: 2
+    healthText: 150
+    crewText: 12
+    storageText: 1,500
+    operationalCostText: 110/day
+    priceText: 51,000
+    ownedCountText: 0
+  - id: cargo_clipper_offer
+    displayName: Cargo Clipper
+    classTag: Trade
+    image: {fileID: 0}
+    speedText: 10
+    healthText: 120
+    crewText: 35
+    storageText: 3,500
+    operationalCostText: 140/day
+    priceText: 87,000
+    ownedCountText: 0
+  - id: frigate_offer
+    displayName: Frigate
+    classTag: Battle
+    image: {fileID: 0}
+    speedText: 7
+    healthText: 400
+    crewText: 55
+    storageText: 15
+    operationalCostText: 200/day
+    priceText: 120,000
+    ownedCountText: 0

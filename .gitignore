@@ -169,3 +169,7 @@ crashlytics-build.properties
 .DS_Store*
 Thumbs.db
 Desktop.ini
+
+.plastic
+plastic.workspace
+plastic.wktree
